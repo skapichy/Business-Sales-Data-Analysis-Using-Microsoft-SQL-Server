@@ -4,34 +4,31 @@ A complete end-to-end SQL project covering data quality checks, cleaning, dimens
 # Project Overview
 This project showcases my ability to use Microsoft SQL Server (MSSQL) to transform raw business sales data into a properly structured, analysis-ready Star Schema Data Warehouse.
 The project demonstrates capabilities across:
-✔ Data Cleaning
-✔ Data Validation
-✔ Duplicate Detection & Removal
-✔ Dimensional Modelling (Star Schema)
-✔ ETL: Loading Dimension & Fact Tables
-✔ Building a scalable structure for BI dashboards
+* Data Cleaning
+* Data Validation
+* Duplicate Detection & Removal
+* Dimensional Modelling (Star Schema)
+* ETL: Loading Dimension & Fact Tables
+* Building a scalable structure for BI dashboards
 The original dataset contains restaurant-level transaction data including: State, City, Location, Restaurant Name, Order Date, Dish Name & Category, Price, Ratings & Rating Count
 This project converts the unstructured raw dataset into a data warehouse model suitable for business analytics.
 
 # Database Used
 USE Sales_DB;
 GO
-I created and used the database Sales_DB, where all tables, schemas, and models were built.
+* I created and used the database Sales_DB, where all tables, schemas, and models were built.
 
 ## Inspecting and Understanding the Data
-✔ Viewing all tables in the database
+* Viewing all tables in the database
 ```TSQL
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
 ```
-
-Purpose:
-Shows available tables and ensures the raw table (Business_sales_Data) exists before transformation.
+### Purpose:
+* Shows available tables and ensures the raw table (Business_sales_Data) exists before transformation.
 
 ✔ Preview the raw data
 SELECT * FROM Business_sales_Data;
-
-
-Purpose:
+### Purpose:
 Quick scan to understand structure, columns, values, and potential issues.
 
 🧹 2. Data Validation & Cleaning
