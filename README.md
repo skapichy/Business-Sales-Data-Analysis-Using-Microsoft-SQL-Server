@@ -157,11 +157,11 @@ Create Table fact_business_sales(
 	FOREIGN KEY (dish_id) REFERENCES dim_dish(dish_id));
 ```
 * Why this is important: This is the core table for analytics:
- * Revenue calculations
- * Ratings analysis
- * Category performance
- * Restaurant comparisons
- * Time-series reporting
+	* Revenue calculations
+	* Ratings analysis
+	* Category performance
+	* Restaurant comparisons
+	* Time-series reporting
 
 ## ETL: Inserting Data into Dimensions
 * Load Date Table
